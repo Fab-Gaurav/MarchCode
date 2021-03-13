@@ -8,9 +8,10 @@ int main()
   cin>>n>>m;
   for(int i=n; i=<m; i++)
   {
+    isPrime == 1;
     for(int j = 2; j <= m / 2; ++j) 
     {
-           if (n % i == 0) {
+           if (n % j == 0) {
                 isPrime = 0;
                 break;
             }
