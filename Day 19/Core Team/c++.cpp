@@ -9,23 +9,24 @@ int main() {
    cout<<"Please enter the number of columns for the matrix: ";
    cin>>cols;
    cout<<"\n";
-   cout<<"Please enter the elements for the Matrix: <<\n";
+   cout<<"Please enter the elements for the Matrix: \n";
    for(r = 0; r < rows; r++){
       for(c = 0;c < cols;c++){
          cin>>matrix[r][c];
       }
    }
-   cout<<"\n "<<The Lower Triangular Matrix is: ";
+   cout<<"\n "<<"The Lower Triangular Matrix is: ";
    for(r = 0; r < rows; r++){
       cout<<"\n";
       for(c = 0; c < cols; c++){
       if(r >= c){
-         cout<< matrix[r][c];
+         cout<< matrix[r][c]<<"\t";
       }
       else{
          cout<<"0";
-         cout<<"\t");
+         cout<<"\t";
       }
+   }
    }
    return 0;
 }
