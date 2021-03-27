@@ -1,27 +1,34 @@
-#include<iostream>
- using namespace std;
+#include <iostream>
+using namespace std;
 
- void upper(int mat[3][3],int row,int col)
- {
-   int i,j;
-   for(i=0;i<row;i++){
-     for(j=0;j<col;j++){
-      if(i>j)
-       cout<<"0"<<" ";
-     else
-       cout<<mat[i][j]<<" ";
+int main()
+{
+    int r, c;
+    cout<< "Please enter the number of rows: ";
+    cin>>r;
+    cout<< "\nPlease enter the nummber of columns: ";
+    cin>>c;
+    int mat[r][c];
+    cout<<"\nPlease enter the elements of the matrix :\n";
+    for(int i=0;i<r;i++)
+    {
+        for(int j=0;j<c;j++)
+        {
+            cin>>mat[i][j];
+        }
+    }
+    cout << "Upper triangular matrix will be: \n";
+    for(int i=0;i<r;i++)
+    {
+      for(int j=0;j<c;j++)
+      {
+        if(i>j)
+          cout<<"0"<<" ";
+        else
+          cout<<mat[i][j]<<" ";
       }
       cout<<endl;
     }
- }
- int main(){
- int mat[3][3] ={{9,8,7},
-           {6,5,4},
-           {3,2,1}
-           };
- int r=3,c=3;
- cout << "Upper triangular matrix: \n";
-    upper(mat,r,c);
 
     return 0;
 
