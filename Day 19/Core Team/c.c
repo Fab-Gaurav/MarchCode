@@ -22,7 +22,7 @@ int main() {
       }
       else{
          printf("0");
-         printf("\t");
+         printf("\t ");
       }
    }
    }
