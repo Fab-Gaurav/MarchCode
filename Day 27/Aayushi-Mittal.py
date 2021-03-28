@@ -1,9 +1,9 @@
 #WAP using a function to find the factorial of a number using recursion.
 
 def factorial(n):
-  fact=1
-  for i in range(2, n+1):
-    fact *= i
-  return fact
+  if n>1:
+     return n * factorial(n - 1)
+  else:
+     return 1
 n=int(input())
 print(n, "! :", factorial(n))
