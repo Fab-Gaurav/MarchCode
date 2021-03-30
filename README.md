@@ -58,4 +58,3 @@ This March Code Program aims to simplify and guide the way beginners make their 
 		</td>
 	</tr>
 </table>
-
